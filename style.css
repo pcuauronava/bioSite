@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, header, nav, main, div, h1, h2, h3, h4, p, ol, ul {
+body, header, image, nav, main, div, h1, h2, h3, h4, p, ol, ul {
 	margin: 0;
 	border: 0;
 	padding: 0;
@@ -56,4 +56,10 @@ nav li a:hover {
 }
 main ul {
 	margin: 0 0 4% 10%;
+}
+image {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
 }
