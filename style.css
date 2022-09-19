@@ -1,9 +1,3 @@
-/* CSS Reset */
-body, header, image, nav, main, div, h1, h2, h3, h4, p, ol, ul {
-	margin: 0;
-	border: 0;
-	padding: 0;
-}
 /*round the borders*/
 body {
 	background-color: #ccc;
