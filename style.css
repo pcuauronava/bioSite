@@ -1,4 +1,5 @@
 /*round the borders*/
+
 body {
 	background-color: #ccc;
 }
@@ -51,9 +52,33 @@ nav li a:hover {
 main ul {
 	margin: 0 0 4% 10%;
 }
-image {
-	display: block;
-  	margin-left: auto;
+img {
+	display:block;
+	margin-left: auto;
   	margin-right: auto;
-  	width: 50%;
+  	width: 50%;	
+}
+
+#profilepic {
+	display: block;
+	margin-left: 15%;
+	margin-bottom: 15%;
+	border-radius: 75%;
+	height: 75px;
+	width: 75px;
+}
+
+#hobbie {
+	border: solid 7px #003333;
+	border-radius: 25px;
+}
+#career {
+	border: solid 7px #003333;
+	border-radius: 25px;
+	width: 50%;
+	height: 50%;
+}
+
+footer{
+	size: .70em;
 }
