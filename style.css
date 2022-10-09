@@ -8,7 +8,6 @@ main {
 	border-radius: 7px;
 	background-color: #cbd8e9;
 	padding: 2%;
-	font-size: 1.15em;
 	font-family: Roboto, sans-serif;
 }
 .container {
@@ -23,6 +22,10 @@ nav li {
 	font-size: 1.5em;
 	border-top: 1px solid #fff;
 	font-family: Garamond, sans-serif;
+	color: #ffffff;
+	border: solid 1px #006666;
+	background-color: #003333;
+	display: block;
 }
 /*a {
 	text-decoration: none;
@@ -35,43 +38,34 @@ header {
 	position: static;
 	padding-bottom: 2%;
 }
-nav li {
-	color: #ffffff;
-	border: solid 1px #006666;
-	background-color: #003333;
-	display: inline-block;
-}
+
 nav li a {
 	color: #ffffff;
 	padding: 0.1em 0.75em;
 }
+
 nav li a:hover {
 	color: #000;
 	background-color: #fff;
 }
+
 main ul {
 	margin: 0 0 4% 10%;
 }
-img {
-	display:block;
-	margin-left: auto;
-  	margin-right: auto;
-  	width: 50%;	
-}
 
-#profilepic {
-	display: block;
-	margin-left: 15%;
-	margin-bottom: 15%;
-	border-radius: 75%;
-	height: 75px;
-	width: 75px;
+img {
+	/*display:block;*/
+	/*margin-left: auto;*/
+  	/*margin-right: auto;*/
+  	width: 80%;	
+	border: solid 7px #003333;
 }
 
 #hobbie {
 	border: solid 7px #003333;
 	border-radius: 25px;
 }
+
 #career {
 	border: solid 7px #003333;
 	border-radius: 25px;
@@ -81,4 +75,58 @@ img {
 
 footer{
 	size: .70em;
+}
+/* grid system*/
+.item1 { grid-area: header; 
+}
+
+.item2 { grid-area: menu;
+}
+
+.item3 { grid-area: main;
+}
+
+.item4 { grid-area: right;
+}
+
+.item5 { grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu main main right right'
+    'menu menu footer footer footer footer';
+  gap: 2px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  /*font-size: 30px;*/
+}
+/*overlapping of the picture over the background*/
+.parent{
+	position: relative;
+}
+
+#backgnd {
+	margin-bottom: 150px;
+}
+
+#profilepic {
+	/*display: block;*/
+	position: absolute;
+	top: 60%;
+	left: 15%;
+	border: 4px solid #003333;
+	/*margin-left: 15%;*/
+	/*margin-bottom: 15%;*/
+	border-radius: 75%;
+	height: 75px;
+	width: 75px;
 }
